@@ -1,0 +1,148 @@
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+#header{
+    height: 120px;
+    position: relative;
+}
+
+#logo{
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#search{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+#search-form{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#search-input{
+    width: 200px;
+    border: 3px solid black;
+    height: 1.25rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
+
+.reset {
+    font-size: 16px;
+    height: 1.5rem;
+}
+
+#main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+}
+.pkm-card{
+    background-color: rgba(255, 0, 0, 0.8);
+    height: auto;
+    width: 220px;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 16px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.pkm-nmbr {
+    text-align: start;
+    margin: 8px;
+    width: fit-content;
+    background-color: lightskyblue;
+    border: 4px solid black;
+    border-radius: 8px;
+    color: black;
+}
+
+.pkm-id{
+    margin: 8px;
+    font-size: 20px;
+}
+
+.pkm-sprite{
+    padding: 4px;
+    background-color: lightskyblue;
+    width: 150px;
+    height: 150px;
+    align-self: center;
+    border: 5px solid black;
+    border-radius: 16px;
+    justify-content: center;
+    position: relative;
+}
+
+.pkm-img{
+    height: 140px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.name{
+    font-size: 25px;
+    margin: 8px;
+    color: white;
+    text-decoration: none;
+}
+
+.types{
+    font-size: 18px;
+    margin: 8px;
+}
+
+.stats{
+    margin: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 4px;
+    gap: 4px;
+    font-size: 14px;
+    text-align: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+}
+
+.atk, .spd, .def, .hp{
+    margin-top: 8px;
+}
+
+@media (width <= 320px){
+    #logo{
+        width: 300px;
+    }
+    #main{
+        display: flex;
+        flex-direction: column;
+    }
+    #search{
+        height: 100px;
+    }
+    #search-form{
+        display: flex;
+        flex-direction: column;
+    }
+}
